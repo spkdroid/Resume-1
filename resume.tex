@@ -1,0 +1,165 @@
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{\huge{Shrey Banga} \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{4in}}
+303 Smith Level Rd, & {\it Phone:}  (919)-448-8780 \\            
+Apt E-22, & {\it E-mail:}  banga.shrey@gmail.com \\
+NC 27516& {\it WWW:} \url{http://cs.unc.edu/~banga/} \\
+\end{tabular}
+
+\section{\sc Education}
+\textsc{University \textit{of} North Carolina \textit{at} Chapel Hill}, Chapel Hill, NC, USA\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Master of Science in Computer Science, May, 2013 (expected)
+\end{list1}
+
+\textsc{Indian Institute \textit{of} Technology Roorkee}, Roorkee, Uttarakhand, India\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Bachelor of Technology in Electrical Engineering, May, 2009 \hfill {CGPA: 8.143/10}
+\end{list1}
+
+\textsc{No.1 Air Force School}, Gwalior, Madhya Pradesh, India\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Higher Secondary Education,  May, 2005 \hfill {Percentage: 91.8\%}
+\end{list1}
+
+\section{\sc Experience}
+{\bf Adobe Systems Inc.}, NOIDA \hfill {\bf January~-~August, 2011}\\
+{\em Member of Technical Staff}\par
+\begin{list2}
+\item {\em Print Team.} Worked on improving and maintaining Camelot, the PostScript printing engine.
+\end{list2}
+
+{\bf Center for Visual Information Technology}, IIIT Hyderabad, \hfill {\bf July~-~December, 2010}\\
+{\em Project Engineer}\par
+\begin{list2}
+\item {\em Computer Graphics Virtual Lab.} Designed a Computer Graphics {\em Virtual Lab}, a government of India initiative intended for teaching sciences across colleges in India.
+\end{list2}
+
+{\bf Deloitte \& Touche}, Hyderabad, India \hfill {\bf June, 2009 to April, 2010}\\
+{\em Consultant}\par
+\begin{list2}
+\item {\em Biometric and Smart-Card authentication solution.} Worked on integrating fingerprint
+and smart-card readers with an Identity Management solution already in place.
+\item {\em Vulnerability Assessment and Penetration Testing.} Performed security assessment
+of network infrastructure of several Fortune 500 companies and designed strategies to prevent attacks.
+\end{list2}
+
+{\bf IBM India Software Labs}, Bangalore, India \hfill {\bf May, 2008 to July, 2008}\\
+{\em Engineering Intern}\par
+\begin{list2}
+\item {\em EAR PlanCreator for Apache Geronimo.} An ajax-based plugin for quickly creating deployment plans for enterprise applications.
+\end{list2}
+
+\section{\sc Projects}
+{\bf Computer Graphics}
+\begin{list2}
+\item {\em Whitted style raytracer.} Supports common primitives, cameras, projections,
+matrix transformations, shading models, texture mapping, reflection and refraction. \hfill {\bf 2003~-~2004}
+\item {\em Raytracer based on Greg Ward's radiosity} to simulate global illumination.  \hfill {\bf 2004~-~2005}
+\item {\em L-systems} parser and renderer, used for rendering fractals and other shapes. \hfill {\bf May,~2005}
+\item {\em Force-directed layout} to display complex relationships of objects interactively in flash. \hfill {\bf July,~2007}
+\item {\em Monte-Carlo raytracer} to simulate global illumination and caustics. \hfill {\bf 2008~-~2009}
+\item {\em Kd-tree intersection accelerator} to improve rendering times of complex scenes. \hfill {\bf February,~2010}
+\item {\em Scene file parser} implemented using flex/yacc. \hfill {\bf July,~2010}
+\item {\em Graphics Virtual Lab} started by the Govt. of India, which will be used by colleges all over India. \hfill {\bf August~-~December,~2010}
+\end{list2}
+
+{\bf Android Development}
+\begin{list2}
+\item {\em DownloadAccelerator.} An Android app that accelerates downloads by splitting files into multiple parts and downloading them concurrently. The user can see all the parts of the file as they are downloaded and launch, delete or re-download the file.\hfill {\bf January - August, 2011}
+\end{list2}
+
+{\bf Chrome Extension}
+\begin{list2}
+\item {\em Counter.} A chrome extension that counts your visits to websites and optionally, blocks the page for a short time, giving you the time to let the feeling pass. \hfill {\bf January - August, 2011}
+\end{list2}
+
+{\bf Vim Plugin}
+\begin{list2}
+\item {\em IDSearch.vim} A front-end to GNU ID utils which adds find-in-files support to Vim for large projects where grep isn't fast enough.\hfill {\bf January - August, 2011}
+\end{list2}
+
+{\bf Machine Learning}
+\begin{list2}
+\item {\em Facial Expression Recognition.} Improvised present machine learning algorithms for expression recognition using a combination of Local Binary Patterns and SVM based classifiers.\hfill {\bf January~-~May, 2008}
+%\item {\em Depth estimation from single monocular images.} Implemented a Gaussian Markov model for predicting depth from textural and monocular cues. Parameters of the model were learnt from training data and used to predict depth of a single test image. It was based on the paper, {\em 3-D Depth Reconstruction from a Single Still Image} by Ashutosh Saxena, Sung H. Chung and Andrew Y. Ng. \hfill {\bf August, 2008~-~May, 2009}
+\end{list2}
+
+{\bf Microprocessors}
+\begin{list2}
+\item {\em Intel 8085A Emulator.} An emulator for the Intel 8085A microprocessor with a modern looking GUI that can step through each instruction cycle and display the effects on flags and memory. Useful messages were displayed to help students learn 8085 assembly.\hfill {\bf January~-~May, 2007}
+\end{list2}
+
+{\bf Web Design}
+\begin{list2}
+\item {\em Watch Out! News Agency.} Designed the website for the students' news magazine of IIT Roorkee, as a member and Chief Web Coordinator. The website hosts all published issues of the magazine along with discussion forums, photographs and other information.
+\item {\em Thomso'07 \& Srishti'07} Designed websites for several cultural and technical festivals at IIT Roorkee.
+\end{list2}
+
+\section{\sc Co-curricular Activities} 
+{\bf Software Development Section, Hobbies Club}, IIT Roorkee
+\begin{list2}
+\item Designed a Steganography software, a networked two-player strategy game and a website, all of which won awards at the annual  technical exhibition, {\em Srishti}.
+\end{list2}
+{\bf Programming Contests}
+\begin{list2}
+\item Third in {\em Code Sangram}, an {\em IEEE (Roorkee chapter)} programming contest.
+\item Participated in programming contests on CodeChef, SPOJ, CodeJam, Hacker Cup etc.
+\end{list2}
+{\bf Literary Section}, IIT Roorkee
+\begin{list2}
+\item Organized and participated in several quizzes, debates and other literary events with several podium finishes.
+\end{list2}
+{\bf Member, Executive Editor \& Chief Web Coordinator}, {\em Watch Out! News Agency},
+\begin{list2}
+\item Edited and formatted the students' news magazine, {\em Watch Out!}.
+\item Designed the magazine's website \url{http://www.wona.co.in/}
+\end{list2}
+{\bf Chief Web Designer, Thomso'07}, IIT Roorkee
+\begin{list2}
+\item Conceptualized, designed and maintained the website for IIT Roorkee's youth festival.
+\end{list2}
+
+\section{\sc Computer Skills} 
+{\bf Languages}
+\begin{list1}
+\item[]  C, C++, Java, Python, 8085 Assembly, JavaScript, ActionScript, HTML+CSS%, PHP, shell scripting
+\end{list1}
+{\bf Platforms \& Tools}
+\begin{list1}
+\item[] Visual Studio, Vim, Unix shell, MATLAB, \LaTeX{}
+\end{list1}
+
+\end{resume}
+\end{document}
