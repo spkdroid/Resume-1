@@ -1,5 +1,15 @@
 \documentclass[margin,line]{res}
+\usepackage{color}
+\definecolor{hyperlinks}{rgb}{0,0,0.5}
+\definecolor{subtle}{rgb}{0.6,0.6,0.6}
+\newcommand{\datesection}[1]{\section{\textnormal{\scriptsize \textcolor{subtle}{#1}}}}
+
 \usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=hyperlinks}
+
+\usepackage[sc]{mathpazo}
+\linespread{1.05}         % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
 
 \oddsidemargin -.5in
 \evensidemargin -.5in
@@ -20,7 +30,6 @@
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
       \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
-
 \begin{document}
 
 \name{\huge{Shrey Banga} \vspace*{.1in}}
@@ -29,9 +38,8 @@
 \section{\sc Contact Information}
 \vspace{.05in}
 \begin{tabular}{@{}p{2in}p{4in}}
-303 Smith Level Rd, & {\it Phone:}  (919)-448-8780 \\            
-Apt E-22, & {\it E-mail:}  banga.shrey@gmail.com \\
-NC 27516& {\it WWW:} \url{http://cs.unc.edu/~banga/} \\
+{\it E-mail:}  banga.shrey@gmail.com  & {\it Phone:}  (919)-448-8780 \\            
+{\it Websites:} \url{cs.unc.edu/~banga/} & \url{www.github.com/milkbikis/} \\
 \end{tabular}
 
 \section{\sc Education}
@@ -47,121 +55,135 @@ NC 27516& {\it WWW:} \url{http://cs.unc.edu/~banga/} \\
 \item[] Bachelor of Technology in Electrical Engineering, May, 2009 \hfill {CGPA: 8.143/10}
 \end{list1}
 
-\textsc{No.1 Air Force School}, Gwalior, Madhya Pradesh, India\\
-\vspace*{-.1in}
-\begin{list1}
-\item[] Higher Secondary Education,  May, 2005 \hfill {Percentage: 91.8\%}
-\end{list1}
-
 \section{\sc Experience}
-{\bf Google Inc.}, Mountain View, California \hfill {\bf May~-~August, 2012}\\
-{\em Software Engineering Intern - Chrome Speed Team.}
-Created a tool for automatic regression alerts in Chrome performance.
-Fixed a WebKit bug which increases performance by a few percent.
-Analyzed the effects of DNS alias selection.
 
-{\bf Adobe Systems Inc.}, NOIDA \hfill {\bf January~-~August, 2011}\\
-{\em Member of Technical Staff}\par
-\begin{list2}
-\item {\em Print Team.} Worked on improving and maintaining Camelot, the PostScript printing engine.
-\end{list2}
+\begin{format}
+		\employer{l}\title{c}\location{r}\\
+		\body\\
+\end{format}
 
-{\bf Center for Visual Information Technology}, IIIT Hyderabad, \hfill {\bf July~-~December, 2010}\\
-{\em Project Engineer - Computer Graphics Virtual Lab.} Designed a virtual lab for Computer Graphics, as part of a Government of India initiative for teaching sciences across colleges in India.
+\datesection{May~-~August, 2012}
+\employer{\bf Google Inc.}
+\title{\em Software Engineering Intern}
+\location{Mountain View, California}
+\begin{position}
+Created a tool for automatic regression alerts in Chrome's performance.
+Fixed a WebKit bug, improving performance by a few percent.
+Analyzed the effects of an alternative DNS alias selection strategy.
+\end{position}
 
-{\bf Deloitte \& Touche}, Hyderabad, India \hfill {\bf June, 2009~-~April, 2010}\\
-{\em Consultant}\par
-\begin{list2}
-\item {\em Biometric and Smart-Card authentication solution.} Worked on integrating fingerprint
-and smart-card readers with an Identity Management solution already in place.
-\item {\em Vulnerability Assessment and Penetration Testing.} Performed security assessment
-of network infrastructure of several Fortune 500 companies and designed strategies to prevent attacks.
-\end{list2}
+\datesection{January~-~August, 2011}
+\employer{\bf Adobe Systems Inc.}
+\title{\em Member of Technical Staff}
+\location{NOIDA, India}
+\begin{position}
+Worked on improving and maintaining \textit{Camelot}, the PostScript printing engine.
+\end{position}
 
-{\bf IBM India Software Labs}, Bangalore, India \hfill {\bf May, 2008 to July, 2008}\\
-{\em Engineering Intern - EAR PlanCreator for Apache Geronimo.} An ajax-based plugin for quickly creating deployment plans for enterprise applications.
+\datesection{July~-~December, 2010}
+\employer{\bf Center for Visual Information Technology}
+\title{\em Project Engineer - Virtual Lab}
+\location{IIIT Hyderabad}
+\begin{position}
+Designed a virtual lab for Computer Graphics, as part of a Government of India initiative for teaching sciences across colleges in India.
+\end{position}
+
+\datesection{June, 2009~-~April, 2010}
+\employer{\bf Deloitte \& Touche}
+\location{Hyderabad, India}
+\title{\em Consultant}
+\begin{position}
+Helped implement a Biometric and Smart-Card authentication solution. \\
+Performed vulnerability assessment and penetration testing on network infrastructure of several Fortune 500 companies
+\end{position}
+
+\datesection{May, 2008 to July, 2008}
+\employer{\bf IBM India Software Labs}
+\location{Bangalore, India}
+\title{\em Software Engineering Intern}
+\begin{position}
+Created the EAR PlanCreator, an ajax-based plugin for quickly creating deployment plans for enterprise applications on Apache's Geronimo server.
+\end{position}
 
 \section{\sc Projects}
+\datesection{August~-~December, 2011}
 {\bf Computer Graphics}
 \begin{list2}
-\item {\em Raytracers.} created raytraces supporting common primitives, cameras, projections, transformations,
-shading models, textures, reflection and refraction, global illumination, Kd-tree acceleration and a scene file compiler.
+\item {\em Raytracers}. created raytracers supporting common primitives, cameras, projections, transformations,
+shading models, textures, reflection and refraction, global illumination, kD-tree acceleration and a scene file compiler.
 \item {\em L-systems} parser and renderer for rendering fractals and other complex shapes.
 \item {\em Force-directed layout} to display complex relationships of objects interactively in flash.
-\item {\em Graphics Virtual Lab} started by the Govt. of India, which will be used by colleges all over India.
 \end{list2}
 
-{\bf Android Development}
-\begin{list2}
-\item {\em DownloadAccelerator.} An Android app that accelerates downloads by splitting files into multiple parts and downloading them concurrently. \hfill {\bf January - August, 2011}
-\end{list2}
+\datesection{January~-~August, 2012}
+{\bf Compilers}\\
+{\em \href{https://github.com/milkbikis/miniJava-compiler}{miniJava compiler}} compiles a subset of Java into bytecode for a VM. Supports inheritance (instanceof, extends), overloading, constructors, loops, Strings and efficient code generation via short circuiting.
 
+\datesection{January~-~August, 2011}
+{\bf Android Development} \\
+{\em DownloadAccelerator.} An Android app that accelerates downloads by splitting files into multiple parts and downloading them concurrently.
+
+\datesection{September~-~December, 2011}
 {\bf Chrome Extensions}
 \begin{list2}
-\item {\em Google Mail Multi-Account Checker.} Shows multiple Gmail inboxes in a single pop-up, with common tasks such as delete, archive and mark as read. Over {\bf 16,000} users.
+\item {\href{https://chrome.google.com/webstore/detail/mcpnehokodklgijkcakcfmccgpanipfp}{\em Google Mail Multi-Account Checker}} Shows multiple Gmail inboxes in a single pop-up, with common tasks such as delete, archive and mark as read. \textbf{Over 22,000 users}.
 \item {\em Counter.} Counts your visits to websites and optionally blocks the page for a short time.
 \end{list2}
 
-{\bf Vim Plugin}
-\begin{list2}
-\item {\em IDSearch.vim} A front-end to GNU ID utils which adds find-in-files support to Vim for large projects where grep isn't fast enough.\hfill {\bf January - August, 2011}
-\end{list2}
+\datesection{August, 2012}
+{\href{https://github.com/milkbikis/powerline-bash}{Powerline for Bash}} A Python script that renders a beautiful and useful bash prompt
+\datesection{May, 2011}
+{\href{http://www.vim.org/scripts/script.php?script_id=3630}{IDSearch.vim}} A front-end to GNU ID utils which adds find-in-files support to {\em Vim} for large projects where grep isn't fast enough.
 
+\datesection{January~-~May, 2008}
 {\bf Machine Learning}
 \begin{list2}
-\item {\em Facial Expression Recognition} using a combination of Local Binary Patterns and SVM based classifiers.\hfill {\bf January~-~May, 2008}
+\item {\em Facial Expression Recognition} using a combination of Local Binary Patterns and SVM based classifiers.
 %\item {\em Depth estimation from single monocular images.} Implemented a Gaussian Markov model for predicting depth from textural and monocular cues. Parameters of the model were learnt from training data and used to predict depth of a single test image. It was based on the paper, {\em 3-D Depth Reconstruction from a Single Still Image} by Ashutosh Saxena, Sung H. Chung and Andrew Y. Ng. \hfill {\bf August, 2008~-~May, 2009}
 \end{list2}
 
+\datesection{January~-~May, 2007}
 {\bf Microprocessors}
 \begin{list2}
-\item {\em Intel 8085A Emulator.} An emulator for the Intel 8085A microprocessor with a modern GUI, for use in teaching.\hfill {\bf January~-~May, 2007}
+\item {\em Intel 8085A Emulator.} An emulator for the Intel 8085A microprocessor with a modern GUI
 \end{list2}
 
 {\bf Web Design}
 \begin{list2}
-\item {\em Watch Out! News Agency.} Designed the website for the students' news magazine of IIT Roorkee, as a member and Chief Web Coordinator.
-\item {\em Thomso'07 \& Srishti'07} Designed websites for several cultural and technical festivals at IIT Roorkee.
-\end{list2}
-
-\section{\sc Co-curricular Activities} 
-{\bf Software Development Section, Hobbies Club}, IIT Roorkee
-\begin{list2}
-\item Designed a Steganography application, a networked 2-player game and a website, all of which won awards at the annual exhibition, {\em Srishti}.
-\end{list2}
-{\bf Programming Contests}
-\begin{list2}
-\item Third in {\em Code Sangram}, an {\em IEEE (Roorkee chapter)} programming contest.
-\item Participated in programming contests on CodeChef, SPOJ, CodeJam, Hacker Cup etc.
-\end{list2}
-{\bf Literary Section}, IIT Roorkee
-\begin{list2}
-\item Organized and participated in several quizzes, debates and other events.
-\end{list2}
-{\bf Member, Executive Editor \& Chief Web Coordinator}, {\em Watch Out! News Agency},
-\begin{list2}
-\item Edited, formatted  and maintained the website for the students' news magazine, {\em Watch Out!}.
-\end{list2}
-{\bf Chief Web Designer, Thomso'07}, IIT Roorkee
-\begin{list2}
-\item Conceptualized, designed and maintained the website for IIT Roorkee's youth festival.
+\item {\em Watch Out! News Agency.} A website for the students' news magazine of IIT Roorkee.
+\item {\em Thomso'07 \& Srishti'07} Websites for several cultural and technical events at IIT Roorkee.
 \end{list2}
 
 \section{\sc Computer Skills} 
 \textbf{Courses}
 	\begin{list1}
-		\item[]  Operating Systems, Data Structures, Compilers, Models of Languages \& Computation
+		\item[]  Algorithm Analysis, Operating Systems, Data Structures, Compilers
 	\end{list1}
 
 \textbf{Languages}
 	\begin{list1}
-		\item[]  C, C++, Java, Python, JavaScript, HTML+CSS, 8085 Assembly, Bash script
+		\item[]  C, C++, Java, Python, JavaScript, HTML+CSS, shell script
 	\end{list1}
 
 \textbf{Platforms \& Tools}
 	\begin{list1}
-		\item[] Visual Studio, Vim, MATLAB, \LaTeX{}
+		\item[] Vim, unix commands, git, Eclipse, Visual Studio, \LaTeX{}
 	\end{list1}
+
+\section{\sc Co-curricular Activities}
+{\bf Programming Contests}
+\begin{list2}
+\item Third in {\em Code Sangram}, an {\em IEEE (Roorkee chapter)} programming contest.
+\item Participate regularly in programming contests on CodeChef, SPOJ, CodeJam, Hacker Cup etc.
+\end{list2}
+
+{\bf Software Development Section, Hobbies Club}, IIT Roorkee
+
+Quizzing and Debating at {\bf Literary Section}, IIT Roorkee
+
+{\bf Executive Editor \& Chief Web Coordinator}, {\em Watch Out! News Agency}, IIT Roorkee
+
+{\bf Chief Web Designer, Thomso'07}, IIT Roorkee
 
 \end{resume}
 \end{document}
